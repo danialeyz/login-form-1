@@ -20,7 +20,7 @@ function validate() {
   const usersPassword = users.map((n) => {
     return n.password;
   });
-
+// email validation
   try {
     if (emailValue == "") throw "please enter your email";
     if (emailValidate === -1) throw "your email is incorrect";
@@ -28,7 +28,7 @@ function validate() {
   } catch (err) {
     document.querySelector("#emailerror").innerHTML = err;
   }
-
+//password validation
   try {
     if (password.trim() == "") throw "please enter your password";
     if (typeof password.trim() == "number")
