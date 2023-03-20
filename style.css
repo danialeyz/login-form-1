@@ -1,0 +1,87 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background: url(./flat-mountains.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(219, 18, 237, 0.285);
+  padding: 40px 20px 40px 20px;
+  border-radius: 10px 80px 10px 80px;
+  box-shadow: 10px black;
+  -webkit-box-shadow: 0px 10px 13px -7px #c97446,
+    8px 9px 49px 25px rgba(215, 127, 54, 0.27);
+  box-shadow: 0px 10px 13px -7px #e46a1e,
+    8px 9px 49px 25px rgba(232, 143, 27, 0.27);
+}
+
+.container {
+  padding-top: 70px;
+  row-gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(30, 78, 210);
+}
+
+#email,
+#password {
+  width: calc(100% - 40px);
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.366);
+  outline: none;
+  padding-inline: 20px;
+}
+
+#email::placeholder,
+#password::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#button {
+  border: none;
+  border-radius: 10px;
+  width: calc(100% - 90px);
+  height: 40px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+#passworderror,
+#emailerror {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 13px;
+  background-color: rgb(255, 205, 205);
+  border: none;
+  border-radius: 2px;
+  color: rgb(0, 0, 0);
+  padding-inline: 3px;
+}
